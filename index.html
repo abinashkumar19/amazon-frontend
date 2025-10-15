@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amazon Clone</title>
-  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon</title>
+<style>
+body { font-family: Arial; background:#f3f3f3; margin:0; padding:0; }
+header { background:#232f3e; color:white; padding:1rem; display:flex; justify-content:space-between; align-items:center;}
+header h1 { font-size:1.8rem; }
+nav button { background:#ff9900; border:none; padding:10px 20px; border-radius:5px; cursor:pointer;}
+.product-list { display:flex; flex-wrap:wrap; justify-content:center; gap:2rem; padding:2rem;}
+.product { background:white; padding:1rem; border-radius:10px; width:220px; box-shadow:0 2px 8px rgba(0,0,0,0.15);}
+.product img { width:100%; border-radius:5px;}
+.product h2 { margin:10px 0 5px;}
+.product p { color:#555; font-weight:bold; }
+.product button { background:#007600; color:white; border:none; padding:10px; border-radius:5px; cursor:pointer;}
+.product button:hover { background:#005f00; }
+</style>
 </head>
 <body>
-  <header>
-    <h1>🛍️ Amazon Clone</h1>
-    <nav>
-      <button onclick="window.location.href='cart.html'">Cart 🛒</button>
-    </nav>
-  </header>
+<header>
+<h1>🛍️ Amazon Clone</h1>
+<nav><button onclick="window.location.href='cart.html'">Cart 🛒</button></nav>
+</header>
 
-  <main class="product-list">
-    <div class="product">
-      <img src="https://m.media-amazon.com/images/I/510uTHyDqGL.jpg" alt="Laptop">
-      <h2>Laptop</h2>
-      <p>₹59,999</p>
-      <button onclick="addToCart('Laptop', 59999)">Add to Cart</button>
-    </div>
+<main class="product-list">
+<div class="product">
+<img src="https://m.media-amazon.com/images/I/510uTHyDqGL.jpg" alt="Laptop">
+<h2>Laptop</h2>
+<p>₹59,999</p>
+<button onclick="addToCart('Laptop',59999)">Add to Cart</button>
+</div>
 
-    <div class="product">
-      <img src="https://m.media-amazon.com/images/I/51raakZN9fL.jpg">
-      <h2>Headphones</h2>
-      <p>₹2,999</p>
-      <button onclick="addToCart('Headphones', 2999)">Add to Cart</button>
-    </div>
+<div class="product">
+<img src="https://m.media-amazon.com/images/I/51raakZN9fL.jpg" alt="Headphones">
+<h2>Headphones</h2>
+<p>₹2,999</p>
+<button onclick="addToCart('Headphones',2999)">Add to Cart</button>
+</div>
 
-    <div class="product">
-      <img src="https://m.media-amazon.com/images/I/61n6Ovq6EdL._SL1500_.jpg" alt="Smartphone">
-      <h2>Smartphone</h2>
-      <p>₹29,999</p>
-      <button onclick="addToCart('Smartphone', 29999)">Add to Cart</button>
-    </div>
-  </main>
-
-  <script src="script.js"></script>
+<div class="product">
+<img src="https://m.media-amazon.com/images/I/61n6Ovq6EdL._SL1500_.jpg" alt="Smartphone">
+<h2>Smartphone</h2>
+<p>₹29,999</p>
+<button onclick="addToCart('Smartphone',29999)">Add to Cart</button>
+</div>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
